@@ -6,6 +6,11 @@
 # - Return the sum of even numbers.
 sum_even_numbers <- function(n) {
     # Your code here
+    sum<-0
+    for (i in 1:n){
+        if(i%%2==0){sum=sum+i}
+    }
+    return(sum)
 }
 
 # Task 2: Calculate Factorial Using a Loop
@@ -14,6 +19,12 @@ sum_even_numbers <- function(n) {
 # - Use a loop to multiply the current number by the factorial.
 # - Return the factorial.
 factorial_using_loop <- function(n) {
+    fact<-1
+    while(n>1){
+        fact<-fact*n
+        n<-n-1
+    }
+    return(fact)
     # Your code here
 }
 
